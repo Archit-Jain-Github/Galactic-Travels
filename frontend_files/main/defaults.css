@@ -1,0 +1,169 @@
+/* common code for all files */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+    background-color: #03020b;
+    color: white;
+}
+
+body{
+    background-color: #03020b;
+    color: white;
+}
+
+
+
+
+/* for header */
+header{
+    color: grey;
+    text-align: center;
+    display: block;
+}
+
+.header-line{
+    color: grey;
+    font-size: 0.8rem;
+    align-items: center;
+    text-align: center;
+    display: inline;
+}
+
+.header-credits{
+    color: grey;
+    font-size: 0.8rem;
+    align-items: center;
+    text-align: center;
+    display: inline;
+}
+
+header > hr{
+    background-color: grey;
+    color: grey;
+}
+
+
+
+
+
+/* for navbar content */
+.navbar {
+    background-color: #03020b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar li {
+    margin-right: 25px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #c9d1d9;
+    position: relative;
+}
+
+.navbar a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #58a6ff;
+    transition: width 0.3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 57px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.navbar > hr{
+    background-color: grey;
+    color: grey;
+}
+
+
+
+
+/* for footer content */
+footer{
+    color: grey;
+}
+
+.footer-content-block1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-content-block1-box1{
+    margin: 7px;
+    padding: 7px;
+}
+
+.footer-content-block1-Planetary-tourism{
+    color: rgb(181, 180, 180);
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
+}
+
+.footer-content-block1-Planetary-tourism-exp{
+    color: rgb(181, 180, 180);
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
+}
+
+.footer-content-block1-box2 > a > img{
+    margin: 7px;
+    padding: 7px;
+    height: 7.5rem;
+    width: auto;
+}
+
+.copyright{
+    color: rgb(155, 154, 154);
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
