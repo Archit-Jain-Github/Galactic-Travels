@@ -23,4 +23,41 @@ def vision(request):
     return render(request, 'main/vision.html')
 
 def contact(request):
+    if request.method=='POST':
+        return render(request, "main/contact.html", {
+            'message': 'Information submitted. You will be contacted soon.',
+        })
     return render(request, 'main/contact.html')
+
+def earth(request):
+    return render(request, 'main/earth.html')
+
+def mercury(request):
+    return render(request, 'main/mercury.html')
+
+def venus(request):
+    return render(request, 'main/venus.html')
+
+def mars(request):
+    return render(request, 'main/mars.html')
+
+def jupiter(request):
+    return render(request, 'main/jupiter.html')
+
+def saturn(request):
+    return render(request, 'main/saturn.html')
+
+def uranus(request):
+    return render(request, 'main/uranus.html')
+
+def neptune(request):
+    return render(request, 'main/neptune.html')
+
+def sun(request):
+    return render(request, 'main/sun.html')
+
+def moon(request):
+    return render(request, 'main/moon.html')
+
+def solar(request):
+    return render(request, 'main/solar.html')

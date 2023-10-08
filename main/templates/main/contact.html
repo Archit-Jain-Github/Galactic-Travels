@@ -17,7 +17,9 @@
 </head>
 
 <body ondragstart="return false;" oncontextmenu="return false;">
-
+    {% if message %}
+        <h3 style="color:green; text-align:center">{{message}}</h3>
+    {% endif %}
     <!-- header -->
     <header>
         <div class="header-line">
@@ -55,7 +57,8 @@
     <main>
 
         <div class="contact-form">
-            <form action="#" method="post">
+            <form method="post">
+                {% csrf_token %}
                 <div class="form-group">
                     <label for="first-name">First Name</label>
                     <input type="text" id="first-name" name="first-name" required>
