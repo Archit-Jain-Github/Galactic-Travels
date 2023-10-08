@@ -11,9 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
     <title>GALACTIC</title>
-    <link rel="stylesheet" href="./main/defaults.css">
-    <link rel="stylesheet" href="./main/spaceVoyage.css">
-    <link rel="stylesheet" href="./main/popup.css">
+    <link rel="stylesheet" href="{% static 'main/defaults.css' %}">
+    <link rel="stylesheet" href="{% static 'main/spaceVoyage.css' %}">
+    <link rel="stylesheet" href="{% static 'main/popup.css' %}">
     <style>
         .popup-content input[type="date"]::-webkit-calendar-picker-indicator {
             filter: invert(1);
@@ -41,7 +41,7 @@
     <nav>
         <div class="navbar">
             <div class="logo">
-                <img src="./main/logo-jpg.jpg" alt="Logo">
+                <img src="{% static 'main/logo-jpg.jpg' %}" alt="Logo">
                 <a href="#">GALACTIC TRAVELS</a>
             </div>
             <ul>
@@ -69,7 +69,7 @@
 
         <div class="contain-cards">
             <div class="card" style="width: 18rem;">
-                <img src="./main/sun.gif" class="card-img-top img-planet" alt="img" >
+                <img src="{% static 'main/sun.gif' %}" class="card-img-top img-planet" alt="img" >
                 <div class="card-body">
                     <h5 class="card-title" style="color: azure; font-size:x-large; font-weight:700">Sun</h5>
                     <p class="card-text">
@@ -77,12 +77,12 @@
                         <br>
                         Gravity: 27.94
                     </p>
-                    <a href="./sun.html" class="btn btn-primary">Show Itinerary</a>
+                    <a href="{% static 'main/sun.html' %}" class="btn btn-primary">Show Itinerary</a>
                 </div>
             </div>
 
             <div class="card" style="width: 18rem;">
-                <img src="./main/moon.gif" class="card-img-top" alt="img" >
+                <img src="{% static 'main/moon.gif' %}" class="card-img-top" alt="img" >
                 <div class="card-body">
                     <h5 class="card-title" style="color: azure; font-size:x-large; font-weight:700">Moon</h5>
                     <p class="card-text">
@@ -90,7 +90,7 @@
                         <br>
                         Gravity: 0.166
                     </p>
-                    <a href="./moon.html" class="btn btn-primary">Show Itinerary</a>
+                    <a href="{% static 'main/moon.html' %} "class="btn btn-primary">Show Itinerary</a>
                 </div>
             </div>
         </div>
@@ -119,7 +119,7 @@
 
         <div class="contain-cards">
             <div class="card" style="width: 18rem;">
-                <img src="./main/mercury.gif" class="card-img-top img-planet" alt="img" >
+                <img src="{% static 'main/mercury.gif' %}" class="card-img-top img-planet" alt="img" >
                 <div class="card-body">
                     <h5 class="card-title" style="color: azure; font-size:x-large; font-weight:700">Mercury</h5>
                     <p class="card-text">
@@ -127,12 +127,12 @@
                         <br>
                         Gravity: 0.378
                     </p>
-                    <a href="./mercury.html" class="btn btn-primary">Show Itinerary</a>
+                    <a href="{% static 'main/mercury.html' %}" class="btn btn-primary">Show Itinerary</a>
                 </div>
             </div>
 
             <div class="card" style="width: 18rem;">
-                <img src="./main/venus.gif" class="card-img-top img-planet" alt="img" >
+                <img src="{% static 'main/venus.gif' %}" class="card-img-top img-planet" alt="img" >
                 <div class="card-body">
                     <h5 class="card-title" style="color: azure; font-size:x-large; font-weight:700">Venus</h5>
                     <p class="card-text">
@@ -140,12 +140,12 @@
                         <br>
                         Gravity: 0.907
                     </p>
-                    <a href="./venus.html" class="btn btn-primary">Show Itinerary</a>
+                    <a href="{% static 'main/venus.html' %}" class="btn btn-primary">Show Itinerary</a>
                 </div>
             </div>
 
             <div class="card" style="width: 18rem;">
-                <img src="./main/earth.gif" class="card-img-top img-planet" alt="img" >
+                <img src="{% static 'main/earth.gif' %}" class="card-img-top img-planet" alt="img" >
                 <div class="card-body">
                     <h5 class="card-title" style="color: azure; font-size:x-large; font-weight:700">Earth</h5>
                     <p class="card-text">
@@ -153,12 +153,12 @@
                         <br>
                         Gravity: 1
                     </p>
-                    <a href="./earth.html" class="btn btn-primary">Show Itinerary</a>
+                    <a href="{% static 'main/earth.html' %}" class="btn btn-primary">Show Itinerary</a>
                 </div>
             </div>
 
             <div class="card" style="width: 18rem;">
-                <img src="./main/mars.gif" class="card-img-top img-planet" alt="img" >
+                <img src="{% static 'main/mars.gif' %}" class="card-img-top img-planet" alt="img" >
                 <div class="card-body">
                     <h5 class="card-title" style="color: azure; font-size:x-large; font-weight:700">Mars</h5>
                     <p class="card-text">
@@ -166,7 +166,7 @@
                         <br>
                         Gravity: 0.377
                     </p>
-                    <a href="./mars.html" class="btn btn-primary">Show Itinerary</a>
+                    <a href="{% static 'main/mars.html' %}" class="btn btn-primary">Show Itinerary</a>
                 </div>
             </div>
         </div>
@@ -193,7 +193,7 @@
 
         <div class="contain-cards">
             <div class="card" style="width: 18rem;">
-                <img src="./main/jupiter.gif" class="card-img-top img-planet" alt="img" >
+                <img src="{% static 'main/jupiter.gif' %}" class="card-img-top img-planet" alt="img" >
                 <div class="card-body">
                     <h5 class="card-title" style="color: azure; font-size:x-large; font-weight:700">Jupiter</h5>
                     <p class="card-text">
@@ -201,12 +201,12 @@
                         <br>
                         Gravity: 2.36
                     </p>
-                    <a href="./jupiter.html" class="btn btn-primary">Show Itinerary</a>
+                    <a href="{% static 'main/jupiter.html' %}" class="btn btn-primary">Show Itinerary</a>
                 </div>
             </div>
 
             <div class="card" style="width: 18rem;">
-                <img src="./main/saturn.gif" class="card-img-top img-planet" alt="img" >
+                <img src="{% static 'main/saturn.gif' %}" class="card-img-top img-planet" alt="img" >
                 <div class="card-body">
                     <h5 class="card-title" style="color: azure; font-size:x-large; font-weight:700">Saturn</h5>
                     <p class="card-text">
@@ -214,12 +214,12 @@
                         <br>
                         Gravity: 0.916
                     </p>
-                    <a href="./saturn.html" class="btn btn-primary">Show Itinerary</a>
+                    <a href="{% static 'main/saturn.html' %}" class="btn btn-primary">Show Itinerary</a>
                 </div>
             </div>
 
             <div class="card" style="width: 18rem;">
-                <img src="./main/uranus.gif" class="card-img-top img-planet" alt="img" >
+                <img src="{% static 'main/uranus.gif' %}" class="card-img-top img-planet" alt="img" >
                 <div class="card-body">
                     <h5 class="card-title" style="color: azure; font-size:x-large; font-weight:700">Uranus</h5>
                     <p class="card-text">
@@ -227,12 +227,12 @@
                         <br>
                         Gravity: 0.889
                     </p>
-                    <a href="./uranus.html" class="btn btn-primary">Show Itinerary</a>
+                    <a href="{% static 'main/uranus.html' %}" class="btn btn-primary">Show Itinerary</a>
                 </div>
             </div>
 
             <div class="card" style="width: 18rem;">
-                <img src="./main/neptune.gif" class="card-img-top img-planet" alt="img" >
+                <img src="{% static 'main/neptune.gif' %}" class="card-img-top img-planet" alt="img" >
                 <div class="card-body">
                     <h5 class="card-title" style="color: azure; font-size:x-large; font-weight:700">Neptune</h5>
                     <p class="card-text">
@@ -240,7 +240,7 @@
                         <br>
                         Gravity: 1.12
                     </p>
-                    <a href="./neptune.html" class="btn btn-primary">Show Itinerary</a>
+                    <a href="{% static 'main/neptune.html' %}" class="btn btn-primary">Show Itinerary</a>
                 </div>
             </div>
         </div>
@@ -267,7 +267,7 @@
 
         <div class="p-5 text-center bg-body-tertiary-light rounded-3 border-new">
             <h1 class="text-body-emphasis-dark">The Ultimate Adventure in the Final Frontier</h1>
-            <img class="solar" src="./main/solarsystem.gif" alt="solar system">
+            <img class="solar" src="{% static 'main/solarsystem.gif' %}" alt="solar system">
             <p class="col-lg-8 mx-auto fs-5 text-muted-dark">Explore the wonders of the solar system with Solaris Odyssey, the most comprehensive and thrilling tour package ever. From the fiery volcanoes of Venus to the icy rings of Saturn, from the majestic canyons of Mars to the mysterious moons of Jupiter, you will experience it all with Solaris Odyssey. 
                 <br>
                 Whether you want to marvel at the beauty of the Sun, feel the thrill of flying through an asteroid belt, or witness the awe-inspiring sight of a comet, Solaris Odyssey has something for everyone.
@@ -276,7 +276,7 @@
                 <br>
                 Book your tickets today and buckle up for Solaris Odyssey: The Ultimate Adventure in the Final Frontier.</p>
             <div class="d-inline-flex gap-2 mb-5">
-                <a href="./solar.html" class="btn btn-primary">Show Itinerary</a>
+                <a href="{% static 'main/solar.html' %}" class="btn btn-primary">Show Itinerary</a>
             </div>
         </div>
 
@@ -414,7 +414,7 @@
 
             <div class="footer-content-block1-box2">
                 <a href="#">
-                    <img src="./main/getitonphone.png" alt="getItOnPhone">
+                    <img src="{% static 'main/getitonphone.png' %}" alt="getItOnPhone">
                 </a>
             </div>
         </div>
@@ -428,7 +428,7 @@
     </footer>
 
     <!-- scripts linked -->
-    <script src="./main/popup.js"></script>
+    <script src="{% static 'main/popup.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
