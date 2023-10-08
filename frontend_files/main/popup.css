@@ -1,0 +1,148 @@
+/* Reset some default styles to ensure responsiveness */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #03020b;
+    color: white;
+}
+
+/* Center the popup vertically and horizontally */
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0s ease-in-out 0.3s;
+}
+
+.popup.active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease-in-out, visibility 0s;
+}
+
+/* Your existing CSS styles */
+
+/* Your existing CSS styles */
+
+.popup-content {
+    width: 100%;
+    max-width: 400px;
+    background: #03020b;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow-y: auto;
+    max-height: 80vh;
+    color: white;
+}
+
+/* Style the scrollbar */
+.popup-content::-webkit-scrollbar {
+    width: 10px;
+}
+
+.popup-content::-webkit-scrollbar-thumb {
+    background-color: #3284ed;
+    border-radius: 10px;
+}
+
+/* Style the scrollbar for Firefox and other browsers */
+.popup-content {
+    scrollbar-width: thin;
+    scrollbar-color: #3284ed transparent;
+}
+
+.popup-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Style the form elements within the popup */
+.popup-content h2 {
+    margin: 10px 0;
+    font-size: 25px;
+    color: white;
+}
+
+.popup-content p {
+    margin: 15px 0;
+    font-size: 16px;
+    color: white;
+}
+
+.popup-content .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.popup-content label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.popup-content input[type="text"],
+.popup-content input[type="email"],
+.popup-content input[type="tel"],
+.popup-content input[type="date"],
+.popup-content input[type="number"],
+.popup-content textarea,
+.popup-content select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    background-color: #03020b;
+}
+
+.popup-content .controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.popup-content .controls button {
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.popup-content .controls .close-btn {
+    background: transparent;
+    color: #3284ed;
+}
+
+.popup-content .controls .submit-btn {
+    background: #3284ed;
+    color: white;
+}
+/* Style the calendar icon in date input */
+.popup-content input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); /* Invert the icon to make it white */
+}

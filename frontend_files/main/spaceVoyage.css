@@ -1,0 +1,26 @@
+body {
+    font-family: 'Young Serif', serif;
+}
+
+.contain-cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img-planet{
+    object-fit: cover;
+}
+.border-new{
+    border: 2px solid ;
+}
+.solar{
+    width: 55%;
+    height: auto;
+    margin: 10px;
+    border: 0.5px solid white;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    border-radius: 10%;
+}
