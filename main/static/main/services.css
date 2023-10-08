@@ -1,0 +1,11 @@
+.services {
+    height: 350px;
+    width: auto;
+    object-fit: cover;
+    border: 1px solid #03020b;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+    border-radius: 5%;
+}
