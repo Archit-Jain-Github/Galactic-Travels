@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Example</title>
+    <link rel="stylesheet" href="./main/popup.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .popup-content input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="center">
+        <button id="open-popup" class="btn btn-primary btn-lg">Book Your Space Tour</button>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="overlay"></div>
+        <div class="popup-content">
+            <h2>Book Your Space Tour</h2>
+            <form id="booking-form">
+                <div class="form-group">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="cosmic-body">Select Cosmic Body to Visit:</label>
+                    <select id="cosmic-body" name="cosmic-body">
+                        <option value="Solaris Odyssey">Solaris Odyssey</option>
+                        <option value="Earth Adventure">Earth Adventure</option>
+                        <option value="Moon">Moon</option>
+                        <option value="Sun">Sun</option>
+                        <option value="Mercury">Mercury</option>
+                        <option value="Venus">Venus</option>
+                        <option value="Mars">Mars</option>
+                        <option value="Jupiter">Jupiter</option>
+                        <option value="Saturn">Saturn</option>
+                        <option value="Uranus">Uranus</option>
+                        <option value="Neptune">Neptune</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="num-travelers">Number of People Traveling:</label>
+                    <input type="number" id="num-travelers" name="num-travelers" required>
+                </div>
+                <div class="form-group">
+                    <label for="tour-date">Date of Tour:</label>
+                    <input type="date" id="tour-date" name="tour-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="destination">Destination:</label>
+                    <select id="destination" name="destination">
+                        <option value="free-roaming">Free Roaming</option>
+                        <option value="special-places">Special Places - Historical Significance*</option>
+                    </select>
+                    <small>*Extra Charges may Apply</small>
+                </div>
+                <div class="form-group">
+                    <label for="duration">Duration:</label>
+                    <input type="number" id="duration" name="duration" placeholder="Number of days" required>
+                </div>
+                <div class="form-group">
+                    <label for="spacecraft-type">Type of Spacecraft:</label>
+                    <select id="spacecraft-type" name="spacecraft-type">
+                        <option value="basic">Basic SpaceCraft Interior</option>
+                        <option value="themed">Theme based SpaceCraft Interior*</option>
+                    </select>
+                    <small>*Extra Charges may Apply</small>
+                </div>
+                <div class="form-group">
+                    <label for="medical-history">Medical History (PDF/Image):</label>
+                    <input type="file" id="medical-history" name="medical-history"
+                        accept=".pdf, .jpg, .jpeg, .png" required>
+                </div>
+                <div class="form-group">
+                    <label for="passport-visa">Passport and Visa (PDF/Image):</label>
+                    <input type="file" id="passport-visa" name="passport-visa"
+                        accept=".pdf, .jpg, .jpeg, .png" required>
+                </div>
+                <div class="form-group">
+                    <p style="font-size: small;">Terms and Conditions:</p>
+                    <p>
+                        <ol>
+                            <li style="font-size: smaller;">The space tourist must agree to undergo a medical
+                                examination
+                                and provide a health certificate before the flight, to ensure their fitness and suitability
+                                for the space environment.</li>
+                            <li style="font-size: smaller;">The space tourist must agree to complete a training program
+                                and
+                                follow the instructions of the crew and ground staff at all times, to ensure their safety
+                                and security during the flight.</li>
+                            <li style="font-size: smaller;">The space tourist must agree to pay the full amount of the
+                                ticket price in advance, and accept the cancellation and refund policy of the company,
+                                which
+                                may be subject to change depending on the circumstances.</li>
+                            <li style="font-size: smaller;">The space tourist must agree to sign a liability waiver and
+                                indemnify the company from any claims or damages arising from the flight, including injury,
+                                death, or loss of property.</li>
+                            <li style="font-size: smaller;">The space tourist must agree to abide by the code of conduct
+                                and
+                                respect the rights and privacy of other passengers and crew members during the flight.</li>
+                            <li style="font-size: smaller;">The space tourist must agree to comply with the laws and
+                                regulations of the country of departure and arrival, as well as any international treaties
+                                or conventions that may apply to space activities.</li>
+                        </ol>
+                    </p>
+                </div>
+                <div class="form-group button-group">
+                    <button type="button" class="close-btn btn btn-outline-danger">Close</button>
+                    <button type="submit" class="submit-btn btn btn-outline-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="./main/popup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>

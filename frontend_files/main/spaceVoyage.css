@@ -1,3 +1,8 @@
 body {
     font-family: 'Young Serif', serif;
 }
+
+.contain-cards{
+    display: flex;
+    justify-content: space-evenly;
+}
