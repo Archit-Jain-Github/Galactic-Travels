@@ -1,14 +1,14 @@
-body{
+body {
     font-family: 'Young Serif', serif;
 }
 
-main > img{
+main>img {
     width: 100%;
     height: auto;
     border: 0;
 }
 
-/* main>.frame1 {
+/* main>.frame {
     font-family: 'Young Serif', serif;
     background-image: url('../assets/others/index-frames/1.png');
     background-size: contain;
@@ -16,57 +16,3 @@ main > img{
     height: 45rem;
     width: 100%;
 }
-
-main>.frame2 {
-    font-family: 'Young Serif', serif;
-    background-image: url('../assets/others/index-frames/2.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 45rem;
-    width: 100%;
-}
-
-main>.frame3 {
-    font-family: 'Young Serif', serif;
-    background-image: url('../assets/others/index-frames/3.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 45rem;
-    width: 100%;
-}
-
-main>.frame4 {
-    font-family: 'Young Serif', serif;
-    background-image: url('../assets/others/index-frames/4.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 45rem;
-    width: 100%;
-}
-
-main>.frame5 {
-    font-family: 'Young Serif', serif;
-    background-image: url('../assets/others/index-frames/5.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 45rem;
-    width: 100%;
-}
-
-main>.frame6 {
-    font-family: 'Young Serif', serif;
-    background-image: url('../assets/others/index-frames/6.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 45rem;
-    width: 100%;
-}
-
-main>.frame7 {
-    font-family: 'Young Serif', serif;
-    background-image: url('../assets/others/index-frames/7.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 45rem;
-    width: 100%;
-} */

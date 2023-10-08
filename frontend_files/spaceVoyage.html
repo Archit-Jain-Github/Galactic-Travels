@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="icon" type="image/png" href="../assets/essentials/logo.jpg" />
+    <link rel="icon" type="image/png" href="./main/logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
     <title>GALACTIC</title>
-    <link rel="stylesheet" href="../styleSheets/defaults.css">
-    <link rel="stylesheet" href="../styleSheets/spaceVoyage.css">
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <link rel="stylesheet" href="./main/defaults.css">
+    <link rel="stylesheet" href="./main/spaceVoyage.css">
 </head>
 
-<body>
+<body ondragstart="return false;" oncontextmenu="return false;">
 
     <!-- header -->
     <header>
@@ -34,13 +35,15 @@
     <nav>
         <div class="navbar">
             <div class="logo">
-                <img src="../assets/essentials/logo-jpg.jpg" alt="Logo">
-                <a href="../presentation/ppt/presentation-pdf.pdf" target="_blank">GALACTIC TRAVELS</a>
+                <img src="./main/logo-jpg.jpg" alt="Logo">
+                <a href="#">GALACTIC TRAVELS</a>
             </div>
             <ul>
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="./planetarium.html">Planetarium</a></li>
                 <li><a href="./spaceVoyage.html">SpaceVoyage</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./vision.html">Future Vision</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </div>
@@ -48,9 +51,7 @@
     </nav>
 
     <!-- main -->
-    <main>
-        <model-viewer src="../assets/3dModels/Mars_1_6792.glb" alt="VR Headset" auto-rotate camera-controls ar ios-src="../assets/3dModels/Mars_1_6792.glb"></model-viewer>
-    </main>
+    <main></main>
 
     <!-- footer -->
     <footer>
@@ -67,7 +68,7 @@
 
             <div class="footer-content-block1-box2">
                 <a href="#">
-                    <img src="../assets/essentials/getitonphone.png" alt="getItOnPhone">
+                    <img src="./main/getitonphone.png" alt="getItOnPhone">
                 </a>
             </div>
         </div>
