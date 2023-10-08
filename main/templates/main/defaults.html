@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
     <title>GALACTIC</title>
-    <link rel="stylesheet" href="./main/defaults.css">
-    <link rel="stylesheet" href="./main/defaults.css">
+    <link rel="stylesheet" href="{% static 'main/defaults.css'%}">
+    <link rel="stylesheet" href="{% static 'main/defaults.css'%}">
 </head>
 
 <body ondragstart="return false;" oncontextmenu="return false;">
@@ -35,16 +35,16 @@
     <nav>
         <div class="navbar">
             <div class="logo">
-                <img src="./main/logo-jpg.jpg" alt="Logo">
+                <img src="{% static 'main/logo-jpg'%}.jpg" alt="Logo">
                 <a href="#">GALACTIC TRAVELS</a>
             </div>
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./planetarium.html">Planetarium</a></li>
-                <li><a href="./spaceVoyage.html">SpaceVoyage</a></li>
-                <li><a href="./services.html">Services</a></li>
-                <li><a href="./vision.html">Future Vision</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="{% url 'index'%}">Home</a></li>
+                <li><a href="{% url 'planetarium'%}">Planetarium</a></li>
+                <li><a href="{% url 'spaceVoyage'%}">SpaceVoyage</a></li>
+                <li><a href="{% url 'services'%}">Services</a></li>
+                <li><a href="{% url 'vision'%}">Future Vision</a></li>
+                <li><a href="{% url 'contact'%}">Contact</a></li>
             </ul>
         </div>
         <hr>
@@ -68,7 +68,7 @@
 
             <div class="footer-content-block1-box2">
                 <a href="#">
-                    <img src="./main/getitonphone.png" alt="getItOnPhone">
+                    <img src="{% static 'main/getitonphone.png'%}" alt="getItOnPhone">
                 </a>
             </div>
         </div>
