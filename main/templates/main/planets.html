@@ -1,0 +1,40 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block body %}
+<style>
+    /* Center the image horizontally */
+    .center-img {
+        display: flex;
+        justify-content: center;
+    }
+    body {
+        background-color: black;
+        color: white; /* Set text color to white for better visibility on a black background */
+    }
+    p {
+        font-size: 22px; /* Adjust the font size as needed */
+    }
+    .title {
+        
+        font-size: 24px; /* Adjust the title font size as needed */
+    }
+</style>
+<!-- <img src="{% static 'main/planets.html' %}"> -->
+<div class="container">
+    <div class="row">
+        <h2 class="title">Mercury</h2>
+        <div class="col-md-12 center-img">
+            
+            <!-- Create a parent div to control width -->
+            <div style="max-width: 60%; margin: 0 auto;">
+                <!-- Increase the size of the image and add padding -->
+                <img src="{% static 'main/mercury.jpg' %}" alt="Your Image" class="img-fluid p-2" style="width: 100%;">
+                <!-- Text with the same width as the image -->
+                <p>Plan an extraordinary adventure that will take you closer to the Sun than ever before. Our exclusive tour to Mercury offers an unparalleled opportunity to discover the secrets of this scorching hot and enigmatic planet.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
