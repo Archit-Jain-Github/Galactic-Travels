@@ -1,16 +1,16 @@
-<h1>🚀 Galactic - NASA Space Apps Challenge</h1>
+# 🚀 Galactic - NASA Space Apps Challenge
 <p>🔗 Link To Website: <a href="https://ayushgupta.pythonanywhere.com/main/" >Galactic</a></p>
 <p>🔗 Link To Game: <a href="https://simmer.io/@Anhi10/planetarium" >Galactic</a></p>
 <p>👇 Scroll down for more details...</p>
 
-<h2>🌟 ABOUT THE TEAM</h2>
+## 🌟 ABOUT THE TEAM
 <p>The GALACTIC is a team of passionate and creative engineers and designers always looking for new challenges. We are committed to building innovative and impactful products.</p>
 <p>We believe in the power of collaboration and teamwork. We are always willing to help each other out and learn from each other. We are also a lot of fun! We love coding, designing, and solving problems together.</p>
 
-<h2>🌟 ABOUT THE CHALLENGE</h2>
+## 🌟 ABOUT THE CHALLENGE
 <p>In the distant future, space tourism will likely be routine for Earth dwellers. However, space travelers will need help choosing a destination and determining an itinerary. Imagine you are a travel agent at a future space tourism office. Your challenge is to create a tool that will develop not only customized itineraries for future travelers who want to visit the main bodies in our solar system—perhaps Mars, Jupiter, or Saturn—but also educate present-day users about the many different objects in our solar system.</p>
 
-<h2>🎮 GAME ASPECT - CONFIGS 🤖</h2>
+## 🎮 GAME ASPECT - CONFIGS 🤖
 <p>WASD - Walk on planets and move around in space</p>
 <p>Q/E - Fly up and down(space only)</p>
 <p>1 - Reset initial position and rotation</p>
@@ -20,12 +20,12 @@
 <p>Space - Jump</p>
 <p>LMB - Click a planet to visit</p>
 
-<h2>📃 BRIEFING</h2>
+## 📃 BRIEFING
 <p>Galactic Travels offers you with once in a lifetime experience to closely observe the celestial's of the mighty solar system.</p>
 <p>Come onboard and have the most breathtaking experience of life and feel like a true Astronaut.</p>
 <p>Book an OuterSpace tour with us for the best once in a lifetime experience.</p>
 
-<h2>©️ Credits</h2>
+## ©️ Credits
 <p>Platform - VS Code</p>
 <p>Platform - Github</p>
 <p>Platform - UnityEngine</p>
