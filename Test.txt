@@ -48,8 +48,3 @@
     <img src="https://github.com/Archit-Jain-Github/Galactic-Travels/blob/main/presentation/readme/frame6.gif" width="100%" />
     <img src="https://github.com/Archit-Jain-Github/Galactic-Travels/blob/main/presentation/readme/frame7.gif" width="100%" />
 </center>
-
-<footer>
-    <hr>
-        Copyright &copy; 2023 Galactic. All rights reserved.
-</footer>
